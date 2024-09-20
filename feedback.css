@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+     background-image: url("https://st2.depositphotos.com/8315148/44931/i/600/depositphotos_449318408-stock-photo-fresh-tasty-pizza-served-wooden.jpg");
+     width:100vw;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 180vh;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.5);
+}
+/* .navbar{
+    height: 85px;
+} */
+.dropdown-menu{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item,.dropdown-item{
+    font-size: 20px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.custom-scrollbar .dropdown-item:hover,
+.custom-scrollbar .dropdown-item:focus,
+.custom-scrollbar .dropdown-item:active {
+    background-color: #495057; /* Adjust hover background color */
+    color: #fff; /* Adjust text color if needed */
+}
+
+h1 {
+    font-size: 5vw; /* Adjust as needed */
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+  
+    left: 45%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-decoration: underline;
+    -webkit-text-stroke: 0.3vw azure;
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #CD6155;
+    border-right: 3px solid #CD6155;
+    overflow: hidden;
+    -webkit-text-stroke: 0vw azure;
+    text-decoration: underline;
+    animation: animation 10s linear infinite;
+}
+
+@keyframes animation {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 103%;
+    }
+}
+
+
+
+
+
+
+  .form {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(250px);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgb(52, 62, 71);
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.text {
+    font-size: 20px;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #f30606;
+    text-decoration: underline;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea, input.form-control {
+    box-shadow: 10px 10px 10px rgb(52, 62, 71);
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-weight: bolder;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    background-color:#c52b2b;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}

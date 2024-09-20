@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url("background-about.png");
+    width: 100%;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    height: 85px;
+}
+
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item, .dropdown-item {
+    font-size: 20px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.custom-scrollbar .dropdown-item:hover,
+.custom-scrollbar .dropdown-item:focus,
+.custom-scrollbar .dropdown-item:active {
+    background-color: #495057; /* Adjust hover background color */
+    color: #fff; /* Adjust text color if needed */
+}
+
+.heading {
+    letter-spacing: 5px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.image img {
+    height: 390px;
+    width: 100%;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.intro {
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(22, 22, 22, .75);
+    width: 100%;
+    bottom: 0;
+    padding: 20px 15px;
+    height: 0;
+    transition: .5s;
+    text-align: center;
+}
+
+.card:hover .image img {
+    transform: scale(1.3);
+}
+
+.card:hover .intro {
+    height: 300px;
+}
+
+.intro h1 {
+    color: red;
+    letter-spacing: 1px;
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.intro p {
+    color: white;
+    font-weight: 500;
+}
+
+.card-info {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-btn {
+    background: #000;
+    border: 0;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-btn:hover {
+    background: red;
+}
+
+.footer h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul, .footer li, .footer a {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer hr {
+    border-top: 1px solid #666666;
+}
+
+.footer .form-group {
+    margin-bottom: 15px;
+}
+
+.footer .form-control {
+    border: 1px solid #666666;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.footer .btn {
+    border: none;
+    background-color: #ff5e14;
+    color: #ffffff;
+}

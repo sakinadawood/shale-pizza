@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6.2.0 CSS -->
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="menu.css">
+    <title>Shale Pizza</title>
+    <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .custom-scrollbar .dropdown-item:hover,
+        .custom-scrollbar .dropdown-item:focus,
+        .custom-scrollbar .dropdown-item:active {
+            background-color: #495057; /* Adjust hover background color */
+            color: #fff; /* Adjust text color if needed */
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 ">
+                <a class="navbar-brand" href="#">
+                    <img src="sHale pizza-01.png" width="90" height="90" alt="Shale Pizza">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav px-5">
+                        <li class="nav-item px-3"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu custom-scrollbar">
+                                <a class="dropdown-item text-danger" href="pizza.html">Pizza</a>
+                                <a class="dropdown-item text-danger" href="garlic.html">Garlic Bread</a>
+                                <a class="dropdown-item text-danger" href="pizzasandwiches.html">Pizza Sandwiches</a>
+                                <a class="dropdown-item text-danger" href="beverages.html">Beverages</a>
+                                <a class="dropdown-item text-danger" href="dessert.html">Desserts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Deals</a>
+                            <ul class="dropdown-menu custom-scrollbar">
+                              <li><a class="dropdown-item text-danger" href="weekend.html">Weekend Special</a></li>
+                              <li><a class="dropdown-item text-danger" href="combo.html">Combo Offers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Location info</a>
+                            <ul class="dropdown-menu custom-scrollbar">
+                              <li><a class="dropdown-item text-danger" href="storelocation.html">Stores Location</a></li>
+                              <li><a class="dropdown-item text-danger" href="location.html">Location</a></li>
+                              <li><a class="dropdown-item text-danger" href="franchies.html">Franchise Info</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3"><a class="nav-link" href="contact.html">Contact Us</a></li>  
+                        <li class="nav-item px-3"><a class="nav-link" href="feedback.html">Feedback</a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    
+    
+   <!-- cards -->
+
+<h1 class="heading text-center head   py-4 text-decoration-underline ">GARLIC BREAD MENU</h1>
+<div class="container py-4">
+    <div class="row ">
+         <!-- Card 1 -->
+         <div class="col-lg-4 col-md-6 mb-4  ">
+            <div class="card">
+                <div class="image">
+                <img src="https://i.ytimg.com/vi/ZxZO9wdOHPU/maxresdefault.jpg"></div>
+                <div class="intro">
+                <h1> GARLIC BREAD</h1>
+                <P class="para">  Crispy garlic bread spread with butter and garlic, and then baked open-faced in the oven.</P>
+                <h2 class="card-info">Rs 300/-</h2>
+                 <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+            </div>
+            </div>
+        </div>
+         <!-- Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" style="color:#c52b2b;" id="orderModalLabel">Order Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">LAST NAME</label>
+              <input type="text" class="form-control" placeholder="Last name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="address">ADDRESS</label>
+              <input type="text" class="form-control" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+              <label for="size">Size</label><br>
+              <input type="radio" id="Small" name="size" value="Small"> Small<br>
+              <input type="radio" id="Medium" name="size" value="Medium"> Medium<br>
+              <input type="radio" id="Large" name="size" value="Large"> Large<br>
+            </div>
+            <div class="form-group">
+              <label for="payment">Payment</label><br>
+              <input type="radio" id="Credit/Debit" name="payment" value="Credit/Debit" required> Credit/Debit<br>
+              <input type="radio" id="CashOnDelivery" name="payment" value="CashOnDelivery" required> Cash On Delivery<br>
+            </div>
+            <br>
+            <button type="submit" style="background-color:#c52b2b;" class="btn btn-primary" >ORDER</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://www.thereciperebel.com/wp-content/uploads/2022/12/cheesy-garlic-bread-TRR-1200-17-of-28.jpg"></div>
+                        <div class="intro">
+                        <h1>CHEESE GARLIC BREAD</h1>
+                        <P class="para">Cheese Garlic Bread has a pampering buttery taste and an excitingly cheesy taste.</P>
+                        <h2 class="card-info">Rs 550/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://www.recipetineats.com/wp-content/uploads/2014/09/DSC_0297.jpg"></div>
+                        <div class="intro">
+                        <h1>PULL A PART GARLIC BREAD</h1>
+                        <P class="para">Pull apart garlic bread is served with cheddar cheese,artisan bread and mozzarella cheese. </P>
+                        <h2 class="card-info">Rs 400/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                </div>
+                </div>
+                  <!-- Card 4  -->
+         <div class="col-lg-4 col-md-6 mb-4  ">
+            <div class="card">
+                <div class="image">
+                <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_744,ar_5:4/v1/img/recipes/25/13/5/6l1VgEr8S4yuev28nDEH_0S9A0976.jpg"></div>
+                <div class="intro">
+                <h1>PEPPERONI BREAD</h1>
+                <P class="para">Pepperoni Bread is pizza ,pepperoni and cheese.It also can be called a pepperoni stromboli. </P>
+                <h2 class="card-info">Rs 450/-</h2>
+                  <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+              </div>
+               </div>
+        </div>
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://www.flavorfuleats.com/wp-content/uploads/2020/11/Webp.net-resizeimage.jpg"></div>
+                        <div class="intro">
+                        <h1>HOT & SPICY GARLIC BREAD</h1>
+                        <P class="para">Spicy garlic bread is a crisp, buttery goodness flavored with garlic & parsley, and chili flakes.</P>
+                        <h2 class="card-info">Rs 250/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                      </div>
+                       </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://i.ytimg.com/vi/aXlSgDSluw4/maxresdefault.jpg"></div>
+                        <div class="intro">
+                        <h1>STUFFED CHEESY BREAD</h1>
+                        <P class="para">Cheese Stuffed Garlic Bread is loaded with cheeses, herb butter and it is very delicious.</P>
+                        <h2 class="card-info">Rs 400/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                    </div>
+                </div>
+                   <!-- Card 7 -->
+         <div class="col-lg-4 col-md-6 mb-4  ">
+            <div class="card">
+                <div class="image">
+                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Garlic-Bread-Spirals_exps83187_TH2379806C09_04_2bC_RMS.jpg"></div>
+                <div class="intro">
+                <h1> GARLIC BREAD SPIRALS</h1>
+                <P class="para">   Garlic Spiral Bread are made like a fresh garlic, Parmesan cheese, and parsley.</P>
+                <h2 class="card-info">Rs 300/-</h2>
+                  <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+            </div>
+            </div>
+        </div>
+                <!-- Card 8 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://bakerstable.net/wp-content/uploads/2022/09/basil-pesto-star-bread-29-e1662475939721-500x375.jpg"></div>
+                        <div class="intro">
+                        <h1>STAR GARLIC BREAD</h1>
+                        <P class="para">Star Cheese Garlic Bread with fresh herbs and loaded cheesy and it is very delicious.</P>
+                        <h2 class="card-info">Rs 550/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://api.vip.foodnetwork.ca/wp-content/uploads/2022/02/Grilled_Garlic_Bread_with_Thyme_Infused_Butter_003.jpg"></div>
+                        <div class="intro">
+                        <h1>GRILLED GARLIC BREAD</h1>
+                        <P class="para">Place slices on the preheated grill and cook until butter is melted and bread is lightly brown.</P>
+                        <h2 class="card-info">Rs 350/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                </div>
+                </div>
+                  <!-- Card 10 -->
+         <div class="col-lg-4 col-md-6 mb-4  ">
+            <div class="card">
+                <div class="image">
+                <img src="https://toriavey.com/images/2015/11/IMG_6496-2.jpg"></div>
+                <div class="intro">
+                    <h1>SWIRLED HERB GARLIC BREAD</h1>
+                    <P class="para">  A fluffy yeast dough swirled around salted butter, garlic, and herbs.   </P>
+                <h2 class="card-info">Rs 350/-</h2>
+                  <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+              </div>
+               </div>
+        </div>
+                <!-- Card 11 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/barbecue-pulled-pork-flatbreads-212afd19.jpg"></div>
+                        <div class="intro">
+                            <h1>BBQ PULLED PORK FLATBREAD</h1>
+                            <P class="para">BBQ Pork flat bread comes with our sweet BBQ sauce, fresh smoked pork and a mozzarella cheese.</P>
+                        <h2 class="card-info">Rs 450/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                      </div>
+                       </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="col-lg-4 col-md-6 mb-4  ">
+                    <div class="card">
+                        <div class="image">
+                        <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Tender-Garlic-Cheese-Breadsticks_EXPS_CHMZ19_120495_B10_25_2b.jpg"></div>
+                        <div class="intro">
+                            <h1>TENDER CHEESE BREADSTICK</h1>
+                            <P class="para"> Tender Garlic cheese Breadstick is stuffed with mozzarella cheese and coated in herb butter. </P>
+                        <h2 class="card-info">Rs 400/-</h2>
+                          <button type="button" class="card-btn" data-toggle="modal" data-target="#orderModal">
+                    Order now
+                  </button>
+                    </div>
+                    </div>
+                </div>
+    </div>
+</div>
+ <!-- Footer -->
+ <footer class="text-white" style="background-color: #333; padding: 20px 0;">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum elementum augue.</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Contact Info</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker"></i> 123 Street, City, Country</li>
+                    <li><i class="fa fa-phone"></i> +123 456 789</li>
+                    <li><i class="fa fa-envelope"></i> info@company.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Follow Us</h4>
+                <ul class="list-unstyled ">
+                    <li><a href="#" class="text-white"><i class="fa fa-facebook me-3"></i> Facebook</a></li>
+                    <li class="me-3"><a href="#" class="text-white "><i class="fa fa-twitter me-2"></i> Twitter</a></li>
+                    <li><a href="#" class="text-white"><i class="fa fa-instagram me-2"></i> Instagram</a></li>
+                    <li><a href="#" class="text-white"><i class="fa fa-linkedin me-2"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>

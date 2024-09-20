@@ -1,0 +1,186 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6.2.0 CSS -->
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="gallery.css" media="all">
+  <title>CSS Grid</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 ">
+        <a class="navbar-brand" href="#">
+            <img src="sHale pizza-01.png" width="90" height="90" alt="Shale Pizza">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav px-5">
+                <li class="nav-item px-3"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+                    <div class="dropdown-menu custom-scrollbar">
+                        <a class="dropdown-item text-danger" href="pizza.html">Pizza</a>
+                        <a class="dropdown-item text-danger" href="garlic.html">Garlic Bread</a>
+                        <a class="dropdown-item text-danger" href="pizzasandwiches.html">Pizza Sandwiches</a>
+                        <a class="dropdown-item text-danger" href="beverages.html">Beverages</a>
+                        <a class="dropdown-item text-danger" href="dessert.html">Desserts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Deals</a>
+                    <ul class="dropdown-menu custom-scrollbar">
+                      <li><a class="dropdown-item text-danger" href="weekend.html">Weekend Special</a></li>
+                      <li><a class="dropdown-item text-danger" href="combo.html">Combo Offers</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item px-3"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Location info</a>
+                    <ul class="dropdown-menu custom-scrollbar">
+                      <li><a class="dropdown-item text-danger" href="storelocation.html">Stores Location</a></li>
+                      <li><a class="dropdown-item text-danger" href="location.html">Location</a></li>
+                      <li><a class="dropdown-item text-danger" href="franchies.html">Franchise Info</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item px-3"><a class="nav-link" href="contact.html">Contact Us</a></li>  
+                <li class="nav-item px-3"><a class="nav-link" href="feedback.html">Feedback</a></li>  
+            </ul>
+        </div>
+    </nav>
+</div>
+<h1 class="heading text-center head   py-4 text-decoration-underline ">GARLIC BREAD MENU</h1>
+
+ <!-- Gallery Section -->
+ <div class="container gallery mt-5">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="image-container">
+                <img src="https://cdn.sortiraparis.com/images/80/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg" class="img-fluid" alt="Gallery Image 1">
+                <div class="overlay">
+                    <h3>" Awsome ambiance "</h3>
+                </div>
+            </div>
+        </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/fe/08/75/el-momento-steak-house.jpg?w=600&h=-1&s=1" class="img-fluid" alt="Gallery Image 2">
+              <div class="overlay">
+                  <h3>" Family moment "</h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://www.usatoday.com/gcdn/presto/2023/09/29/USAT/09b4c8b8-dbd2-44db-875c-d2d377a3a913-1.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp" class="img-fluid" alt="Gallery Image 2">
+              <div class="overlay">
+                  <h3>" Coffee lover's "</h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://img.freepik.com/premium-photo/friends-clinking-elegant-drinks-youth-enjoying-themselves-with-alcohol-happy-hour-social-gathering-with-vibrant-filter-emphasis-bottom-cuba-libre-beverage_117038-23713.jpg" class="img-fluid" alt="Gallery Image 2">
+              <div class="overlay">
+                  <h3>" Refreshing Beverages "</h3>
+              </div>
+          </div>
+      </div>
+      <!-- Repeat for other images -->
+  </div>
+   
+  <div class="row mt-4">
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://t4.ftcdn.net/jpg/06/21/86/43/360_F_621864330_WE1GJ2l5mI3t3DP2uJSo1Yo9FHvKz5y3.jpg" class="img-fluid" alt="Gallery Image 5">
+              <div class="overlay">
+                  <h3>" Delicious Garlic Bread "</h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://zestykits.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/03/16155956/pizza-party-e1647469280981.png" class="img-fluid" alt="Gallery Image 6">
+              <div class="overlay">
+                  <h3>" Tasty Treat "</h3>
+              </div>
+          </div>
+          
+      </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://media.licdn.com/dms/image/v2/C5612AQEZLxYqx-bZPg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1607814441452?e=1730937600&v=beta&t=bTP0DRgLq7p4L5yDrTkrzLeYDad9U17K3pq2NsK7dGc" class="img-fluid" alt="Gallery Image 5">
+              <div class="overlay">
+                  <h3>" A Fusion of Art and Flavor "</h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-6">
+          <div class="image-container">
+              <img src="https://img.freepik.com/premium-photo/photo-chef-plating-gourmet-dessert_778780-8024.jpg" class="img-fluid" alt="Gallery Image 5">
+              <div class="overlay">
+                  <h3>" A Symphony of Sweetness "</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+ <!-- Footer -->
+ <footer class="text-white" style="background-color: #333; padding: 20px 0;">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-3 col-sm-6">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum elementum augue.</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h4>Contact Info</h4>
+              <ul class="list-unstyled">
+                  <li><i class="fa fa-map-marker"></i> 123 Street, City, Country</li>
+                  <li><i class="fa fa-phone"></i> +123 456 789</li>
+                  <li><i class="fa fa-envelope"></i> info@company.com</li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h4>Follow Us</h4>
+              <ul class="list-unstyled ">
+                  <li><a href="#" class="text-white"><i class="fa fa-facebook me-3"></i> Facebook</a></li>
+                  <li class="me-3"><a href="#" class="text-white "><i class="fa fa-twitter me-2"></i> Twitter</a></li>
+                  <li><a href="#" class="text-white"><i class="fa fa-instagram me-2"></i> Instagram</a></li>
+                  <li><a href="#" class="text-white"><i class="fa fa-linkedin me-2"></i> LinkedIn</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h4>Newsletter</h4>
+              <form action="#">
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Your email address">
+                  </div>
+                  <button type="submit" class="btn btn-danger mt-2">Subscribe</button>
+              </form>
+          </div>
+      </div>
+      
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

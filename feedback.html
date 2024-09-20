@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6.2.0 CSS -->
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Shale Pizza</title>
+    <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .custom-scrollbar .dropdown-item:hover,
+        .custom-scrollbar .dropdown-item:focus,
+        .custom-scrollbar .dropdown-item:active {
+            background-color: #495057; /* Adjust hover background color */
+            color: #fff; /* Adjust text color if needed */
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 ">
+                <a class="navbar-brand" href="#">
+                    <img src="sHale pizza-01.png" width="90" height="90" alt="Shale Pizza">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav px-5">
+                        <li class="nav-item px-3"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu custom-scrollbar">
+                                <a class="dropdown-item text-danger" href="pizza.html">Pizza</a>
+                                <a class="dropdown-item text-danger" href="garlic.html">Garlic Bread</a>
+                                <a class="dropdown-item text-danger" href="pizzasandwiches.html">Pizza Sandwiches</a>
+                                <a class="dropdown-item text-danger" href="beverages.html">Beverages</a>
+                                <a class="dropdown-item text-danger" href="dessert.html">Desserts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Deals</a>
+                            <ul class="dropdown-menu custom-scrollbar">
+                              <li><a class="dropdown-item text-danger" href="weekend.html">Weekend Special</a></li>
+                              <li><a class="dropdown-item text-danger" href="combo.html">Combo Offers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Location info</a>
+                            <ul class="dropdown-menu custom-scrollbar">
+                              <li><a class="dropdown-item text-danger" href="storelocation.html">Stores Location</a></li>
+                              <li><a class="dropdown-item text-danger" href="location.html">Location</a></li>
+                              <li><a class="dropdown-item text-danger" href="franchies.html">Franchise Info</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3"><a class="nav-link" href="contact.html">Contact Us</a></li>  
+                        <li class="nav-item px-3"><a class="nav-link" href="feedback.html">Feedback</a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+   
+      
+
+        <div class="container form">
+            <h1 data-text="FEEDBACK"> FEEDBACK</h1>
+            <br><br><br><br><br>
+            <form id="feedbackForm"  novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="Food Quality">Food Quality</label><br>
+                        <div class="text">
+                            <input type="radio" id="Excellent" name="rate1" value="Excellent" required>Excellent<br>
+                            <input type="radio" id="Good" name="rate1" value="Good">Good<br>
+                            <input type="radio" id="Average" name="rate1" value="Average">Average<br>
+                            <input type="radio" id="Dissatisfied" name="rate1" value="Dissatisfied">Dissatisfied
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="Order Accuracy">Order Accuracy</label><br>
+                        <div class="text">
+                            <input type="radio" id="Excellent" name="rate2" value="Excellent" required>Excellent<br>
+                            <input type="radio" id="Good" name="rate2" value="Good">Good<br>
+                            <input type="radio" id="Average" name="rate2" value="Average">Average<br>
+                            <input type="radio" id="Dissatisfied" name="rate2" value="Dissatisfied">Dissatisfied
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="Speed Of Service">Speed Of Service</label><br>
+                        <div class="text">
+                            <input type="radio" id="Excellent" name="rate3" value="Excellent" required>Excellent<br>
+                            <input type="radio" id="Good" name="rate3" value="Good">Good<br>
+                            <input type="radio" id="Average" name="rate3" value="Average">Average<br>
+                            <input type="radio" id="Dissatisfied" name="rate3" value="Dissatisfied">Dissatisfied
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="Overall Experience">Overall Experience</label><br>
+                        <div class="text">
+                            <input type="radio" id="Excellent" name="rate4" value="Excellent" required>Excellent<br>
+                            <input type="radio" id="Good" name="rate4" value="Good">Good<br>
+                            <input type="radio" id="Average" name="rate4" value="Average">Average<br>
+                            <input type="radio" id="Dissatisfied" name="rate4" value="Dissatisfied">Dissatisfied
+                        </div>
+                    </div>
+                </div>
+        
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="fname">FULL NAME:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name"  required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="email">EMAIL ADDRESS:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="contact">CONTACT NUMBER:</label>
+                        <input type="text" class="form-control" id="number" placeholder="Enter Your Contact Number" required>
+                        <div class="invalid-feedback">Please enter your contact number</div>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <label for="review">YOUR REVIEW:</label>
+                        <textarea class="form-control" rows="3" id="review" placeholder="Enter Your Opinion" required></textarea>
+                        <div class="invalid-feedback">Please enter your review.</div>
+                    </div>
+                </div>
+        
+                <div class="text-center">
+                    <button type="submit" class="btn mt-3">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        
+        <script>
+            (function () {
+        'use strict'
+        const form = document.getElementById('feedbackForm')
+
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })()
+
+    function submit() {
+        alert("Your form has been submitted");
+    }
+         
+        </script>
+        
+        
+ <!-- Footer -->
+ <footer class="text-white" style="background-color: #333; padding: 20px 0;">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum elementum augue.</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Contact Info</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker"></i> 123 Street, City, Country</li>
+                    <li><i class="fa fa-phone"></i> +123 456 789</li>
+                    <li><i class="fa fa-envelope"></i> info@company.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Follow Us</h4>
+                <ul class="list-unstyled ">
+                    <li><a href="#" class="text-white"><i class="fa fa-facebook me-3"></i> Facebook</a></li>
+                    <li class="me-3"><a href="#" class="text-white "><i class="fa fa-twitter me-2"></i> Twitter</a></li>
+                    <li><a href="#" class="text-white"><i class="fa fa-instagram me-2"></i> Instagram</a></li>
+                    <li><a href="#" class="text-white"><i class="fa fa-linkedin me-2"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
